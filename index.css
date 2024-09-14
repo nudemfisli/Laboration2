@@ -1,7 +1,37 @@
-* {
-  font-family: Arial, Helvetica, sans-serif;
+*::after,
+*::before {
+  box-sizing: border-box;
 }
 
-.navbar {
-  background-color: #6f4d46;
+header {
+  margin: 0;
+}
+
+.navlist {
+  list-style-type: none;
+}
+
+:root {
+  --bar--width: 60px;
+  --bar--height: 8px;
+  --foreground: #333;
+  --background: white;
+}
+
+.hamburger-menu {
+  display: flex;
+  flex-direction: column;
+}
+.hamburger-menu::before,
+.hamburger-menu::after,
+.hamburger.menu input {
+  content: "";
+  width: var(--bar--width);
+  height: var(--bar--height);
+  background-color: var(--foreground);
+  border-radius: 999px;
+}
+
+.hamburger-menu input {
+  appearance: none;
 }
