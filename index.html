@@ -13,14 +13,40 @@
   <body>
     <!-- Hör börjar navbar -->
     <header>
-      <label class="hamburger-menu">
-        <input type="checkbox" />
-      </label>
-      <nav class="navbar">
-        <ul class="navlist">
-          <li><a href="index.html" class="active"></a>Home</li>
-          <li>Meny</li>
-          <li>Om oss</li>
+      <nav>
+        <input type="checkbox" id="sidebar-active" />
+        <label for="sidebar-active" class="open-sidebar-button">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="32px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#e8eaed"
+          >
+            <path
+              d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+            />
+          </svg>
+        </label>
+        <div class="links-container">
+          <label for="sidebar-active" class="closed-sidebar-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="32px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#e8eaed"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              />
+            </svg>
+          </label>
+        </div>
+
+          <a class="home" href="#"></a>Hem</li>
+          <a href="#"></a>Meny</li>
+          <a href="#"></a>Om oss</li>
         </ul>
       </nav>
     </header>
