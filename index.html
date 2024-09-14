@@ -3,28 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dokument</title>
+    <meta
+      name="description"
+      content="Café Tekoppen är ett café med premium kaffe och te med god fika."
+    />
+    <title>Café Tekoppen</title>
   </head>
   <body>
     <!-- Hör börjar header med navbar -->
     <header>
-      <nav></nav>
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html" class="active"></a>Home</li>
+          <li>Meny</li>
+          <li>Om oss</li>
+        </ul>
+      </nav>
     </header>
 
     <!-- Innehållet av sidan börjar här, tillsätt sections och article-->
     <main>
       <section>
-        <h1></h1>
-        <p></p>
+        <h1>Välkommen till Café Tekoppen</h1>
+        <p class="motto">Fika för alla</p>
       </section>
 
       <!-- Section 2: om oss -->
-      <section>
-        <p></p>
+      <section class="om-oss">
+        <p class="text">
+          Mysigt café i Stockholm. Vi serverar gott kaffe och te med smaker från
+          världen över. Vi har massor med goda bakverk som bullar, kakor,
+          cheesecake. Vi har även goda smörgåsar med egetbakat bröd. Hos oss
+          finns det även andra sötsaker som glass. Alla våra ingredienser är
+          ekologiskt och närproducerat.
+        </p>
       </section>
 
       <!-- Section 4: meny med 3 bilder flex -->
-      <section></section>
+      <section class="menybilder">
+        <img src="img/cafeoutside.jpg" alt="Utsidan på vårat café" />
+        <div class="overlay-text">Hos oss</div>
+        <img src="img/teacup.jpg" alt="Tekopp med blomma" />
+        <div class="overlay-text">Beställ online</div>
+        <img src="img/fika.jpg" alt="Brun tekopp med två bruna macarons" />
+        <div class="overlay-text">fika</div>
+      </section>
     </main>
 
     <!-- Footer -->
