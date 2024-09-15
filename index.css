@@ -87,13 +87,14 @@ h1 {
 }
 
 /* Section 3 */
-/*.menybilder {
+.menybilder {
   display: flex;
   flex-direction: row;
-  margin-top: 3rem;
-  margin-left: 2rem;
-  height: 100px;
-}*/
+  margin-top: 5rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  justify-content: space-between;
+}
 
 .overlay-text {
   position: absolute;
@@ -101,4 +102,26 @@ h1 {
 }
 
 .image-text-container {
+  position: relative;
+  text-align: center;
+  margin-top: 6rem;
+}
+
+.text-box {
+  position: absolute;
+  bottom: -1rem;
+  right: 17rem;
+  font-size: 1.6rem;
+  background-color: rgba(211, 211, 211, 0.8);
+  padding: 2rem;
+  text-align: center;
+}
+
+footer {
+  display: flex;
+}
+
+li {
+  display: flex;
+  text-decoration: none;
 }
