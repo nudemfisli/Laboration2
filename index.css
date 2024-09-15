@@ -25,7 +25,7 @@ nav a {
 }
 
 nav a:hover {
-  background-color: rgb(228, 227, 227);
+  background-color: rgb(233, 229, 229);
 }
 
 nav svg {
@@ -102,14 +102,17 @@ h1 {
   position: relative;
   text-align: center;
   margin-top: 6rem;
+}
+
+/* Responsiv bild */
+.image-text-container img {
   max-width: 100%;
   height: auto;
-  overflow: hidden;
 }
 
 .text-box {
   position: relative;
-  font-size: 1.6rem;
+  font-size: calc(1vw + 1vh);
   background-color: rgba(211, 211, 211, 0.8);
   text-align: center;
   margin-left: 30rem;
