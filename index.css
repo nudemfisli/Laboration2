@@ -8,6 +8,8 @@
 /* Navbar */
 nav {
   height: 70px;
+  width: 100%;
+  max-width: 100%;
   background-color: rgba(140, 113, 86, 0.5);
 }
 
@@ -25,7 +27,7 @@ nav a {
 }
 
 nav a:hover {
-  background-color: rgb(233, 229, 229);
+  background-color: rgb(244, 243, 243);
 }
 
 nav svg {
@@ -87,6 +89,7 @@ h1 {
   display: flex;
   justify-content: center;
   margin-top: 5rem;
+  width: 100%;
   max-width: 100%;
 }
 
@@ -97,6 +100,7 @@ h1 {
   justify-content: center;
   gap: 1rem;
 }
+
 /* Section 4 */
 .overlay-text {
   position: absolute;
@@ -118,8 +122,6 @@ h1 {
 .text-box-container {
   display: inline-block;
   align-items: center;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
 }
 
 .text-box {
@@ -154,4 +156,21 @@ footer a {
   flex-direction: row;
   justify-content: space-evenly;
   text-align: center;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 768px) and (max-width: 980px);
+ {
+  .om-oss {
+    margin-right: 1rem;
+  }
+
+  .text {
+    font-size: 1rem;
+  }
+
+  .kaffemaskin {
+    display: hidden;
+  }
 }
