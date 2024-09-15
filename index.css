@@ -8,29 +8,24 @@
 /* Navbar */
 nav {
   height: 70px;
-  background-color: aquamarine;
-  display: flex;
-  align-items: center;
-  padding: 0 1px;
+  background-color: rgba(140, 113, 86, 0.5);
 }
 
-.links-container {
+.navlinks {
   display: flex;
-  justify-content: space-around;
-  width: 100%;
-  position: absolute;
+  justify-content: space-evenly;
+  text-decoration: none;
 }
 
 nav a {
-  display: flex;
-  align-items: center;
+  font-size: 1.5rem;
   text-decoration: none;
   color: black;
-  justify-content: space-between;
+  margin-top: 1.5rem;
 }
 
 nav a:hover {
-  background-color: lightgray;
+  background-color: rgb(228, 227, 227);
 }
 
 nav svg {
@@ -65,6 +60,7 @@ h1 {
   font-style: italic;
 }
 
+/* Section 2 */
 .om-oss {
   margin-left: 140px;
   margin-right: 140px;
@@ -96,6 +92,7 @@ h1 {
   justify-content: space-between;
 }
 
+/* Section 4 */
 .overlay-text {
   position: absolute;
   justify-content: center;
@@ -105,23 +102,41 @@ h1 {
   position: relative;
   text-align: center;
   margin-top: 6rem;
+  max-width: 100%;
+  height: auto;
+  overflow: hidden;
 }
 
 .text-box {
-  position: absolute;
-  bottom: -1rem;
-  right: 17rem;
+  position: relative;
   font-size: 1.6rem;
   background-color: rgba(211, 211, 211, 0.8);
-  padding: 2rem;
   text-align: center;
+  margin-left: 30rem;
+  margin-right: 30rem;
 }
 
+/* Footer */
 footer {
-  display: flex;
+  width: 100%;
+  background-color: rgba(140, 113, 86, 0.5);
+  margin-top: 4rem;
+  margin-top: 1.5rem;
 }
 
-li {
-  display: flex;
+.copyright {
+  margin-top: 1rem;
+}
+
+footer a {
   text-decoration: none;
+  color: black;
+  margin-bottom: 1rem;
+}
+.footerlinks {
+  font-size: 1.3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: center;
 }

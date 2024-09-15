@@ -14,6 +14,7 @@
     <!-- Hör börjar navbar -->
     <header>
       <nav>
+        <!-- Hamburger meny -->
         <input type="checkbox" id="sidebar-active" />
         <label for="sidebar-active" class="open-sidebar-button">
           <svg
@@ -43,10 +44,13 @@
             </svg>
           </label>
         </div>
-        <a href="#">Hem</a>
-        <a href="#">Meny</a>
-        <a href="#">Om oss</a>
-        <a href="#">Boka bord</a>
+        <!-- Slutet av hamburger meny -->
+        <div class="navlinks">
+          <a href="#">Hem</a>
+          <a href="#">Meny</a>
+          <a href="#">Om oss</a>
+          <a href="#">Boka bord</a>
+        </div>
       </nav>
     </header>
 
@@ -81,11 +85,8 @@
       <!-- Section 3: meny med 3 bilder flex -->
       <section class="menybilder">
         <img src="img/croissants.jpg" alt="Flera croissanter" />
-        <div class="overlay-text">Hitta hit</div>
         <img src="img/teacup.jpg" alt="Tekopp med blomma" />
-        <div class="overlay-text">Beställ online</div>
         <img src="img/coffee.jpg" alt="Vit mugg med kaffebönor i och runtom" />
-        <div class="overlay-text">Fika</div>
       </section>
     </main>
 
@@ -112,12 +113,12 @@
 
     <!-- Footer -->
     <footer>
-      &copy; Café Tekoppen
-      <ul class="footerlinks">
-        <li>Om oss</li>
-        <li>Kontakta oss</li>
-        <li>Sociala medier</li>
-      </ul>
+      <div class="copyright">&copy; Café Tekoppen</div>
+      <div class="footerlinks">
+        <a href="#">Om oss</a>
+        <a href="#">Kontakta oss</a>
+        <a href="#">Sociala medier</a>
+      </div>
     </footer>
   </body>
 </html>
