@@ -210,18 +210,12 @@ footer a {
 }
 
 @media screen and (min-width: 360px) and (max-width: 767px) {
+  /* Hamburger menu */
+
   nav svg {
     display: block;
-    fill: black;
-  }
 
-  .link-container {
-    box-sizing: border-box;
-    position: fixed;
-    height: 100%;
-    color: black;
-    text-decoration: none;
-    text-align: left;
+    fill: black;
   }
 
   .navlinks {
@@ -229,7 +223,6 @@ footer a {
     flex-direction: column;
     align-items: flex-start;
     position: fixed;
-    padding: 60px 30px;
     width: 170px;
     height: 100%;
     background-color: #c5b8ab;
@@ -237,24 +230,22 @@ footer a {
     padding-left: 1.5rem;
     top: 0;
     right: 0;
+    z-index: 2;
   }
 
   .open-sidebar-button {
-    position: absolute;
     display: block;
     cursor: pointer;
-    z-index: 5;
-    top: 1.2rem;
-    right: 1.2rem;
   }
 
   .closed-sidebar-button {
     display: none;
-    position: absolute;
   }
 
-  #sidebar-active:checked ~ .link-container .closed-sidebar-button {
-    display: block;
+  #sidebar-active:checked ~ .navlinks .closed-sidebar-button {
+    display: flex;
+    top: 0;
+    right: 0;
   }
 
   #sidebar-active:not(:checked) ~ .navlinks {
@@ -264,6 +255,7 @@ footer a {
   .navlinks a:hover {
     background-color: rgb(255, 255, 255);
   }
+  /* End hamburger menu  */
 
   h1,
   .motto {
@@ -308,4 +300,4 @@ footer a {
   }
 }
 
-/* Validerat 17/9 */
+/* Kod validerat 17/9 */
