@@ -122,12 +122,12 @@ h1 {
   height: auto;
 }
 
-.text-box-container {
+.opening-hours-container {
   display: inline-block;
   align-items: center;
 }
 
-.text-box {
+.opening-hours {
   position: relative;
   font-size: calc(1vw + 1vh);
   background-color: rgba(211, 211, 211, 0.8);
@@ -193,19 +193,13 @@ footer a {
     height: auto;
   }
 
-  .bottomimage {
-    max-width: 100%;
-    width: 600px;
-    height: 300px;
-  }
-
-  .text-box-container {
+  .opening-hours-container {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  .text-box {
+  .opening-hours {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -236,7 +230,7 @@ footer a {
     align-items: flex-start;
     position: fixed;
     padding: 60px 30px;
-    width: 200px;
+    width: 170px;
     height: 100%;
     background-color: #c5b8ab;
     box-shadow: -5px 0 5px rgb(0, 0, 0, 0.25);
@@ -268,5 +262,50 @@ footer a {
   }
 
   .navlinks a:hover {
-    background-color: rgb (255, 255, 255);
+    background-color: rgb(255, 255, 255);
   }
+
+  h1,
+  .motto {
+    font-size: 1.3rem;
+  }
+
+  .om-oss {
+    margin: 0;
+    padding: 0;
+  }
+
+  .om-oss-text {
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    margin-left: 2rem;
+  }
+
+  .kaffemaskin {
+    display: none;
+  }
+
+  .bottomimage {
+    width: 70vh;
+  }
+  .opening-hours-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .opening-hours {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 20rem;
+    margin: 3rem;
+    font-size: 1.1rem;
+  }
+
+  .footerlinks {
+    font-size: 1.1rem;
+  }
+}
+
+/* Validerat 17/9 */
