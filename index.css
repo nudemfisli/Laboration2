@@ -9,16 +9,11 @@
 /* Navbar */
 nav {
   height: 70px;
-  width: 100%;
   max-width: 100%;
   background-color: rgba(140, 113, 86, 0.5);
-}
-
-.navlinks {
   display: flex;
-  justify-content: space-evenly;
-  text-decoration: none;
   flex-direction: row;
+  justify-content: space-evenly;
 }
 
 nav a {
@@ -26,25 +21,11 @@ nav a {
   text-decoration: none;
   color: black;
   margin-top: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 nav a:hover {
   background-color: rgb(255, 255, 255);
-}
-
-nav svg {
-  display: none;
-  fill: rgb(0, 0, 0);
-}
-
-#sidebar-active {
-  display: none;
-}
-
-.open-sidebar-button,
-.closed-sidebar-button {
-  display: none;
-  padding: 0 20px;
 }
 
 /* Main content */
@@ -73,7 +54,7 @@ h1 {
   display: flex;
 }
 
-.text {
+.om-text {
   text-align: center;
   margin-right: 50px;
   justify-content: center;
@@ -92,7 +73,6 @@ h1 {
   display: flex;
   justify-content: center;
   margin-top: 5rem;
-  width: 100%;
   max-width: 100%;
 }
 
@@ -105,10 +85,6 @@ h1 {
 }
 
 /* Section 4 */
-.overlay-text {
-  position: absolute;
-  justify-content: center;
-}
 
 .image-text-container {
   position: relative;
@@ -140,20 +116,22 @@ h1 {
 footer {
   width: 100%;
   background-color: rgba(140, 113, 86, 0.5);
-  margin-top: 4rem;
   margin-top: 1.5rem;
 }
 
-.copyright {
-  margin-top: 1rem;
+#copyright {
+  margin-top: 0.5rem;
+  font-size: 1rem;
 }
 
 footer a {
   text-decoration: none;
   color: black;
+  margin-top: 1rem;
   margin-bottom: 1rem;
 }
-.footerlinks {
+
+#footerlinks {
   font-size: 1.3rem;
   display: flex;
   flex-direction: row;
@@ -164,16 +142,14 @@ footer a {
 /* Media Queries */
 
 @media screen and (min-width: 768px) and (max-width: 980px) {
-  * {
-    margin: 0;
-    padding: 0;
+  nav a {
+    font-size: 1.5rem;
   }
-
   .om-oss {
     margin-right: 1rem;
   }
 
-  .text {
+  .om-text {
     font-size: 1.2rem;
   }
 
@@ -196,7 +172,6 @@ footer a {
   .opening-hours-container {
     display: flex;
     justify-content: center;
-    align-items: center;
   }
 
   .opening-hours {
@@ -210,53 +185,7 @@ footer a {
 }
 
 @media screen and (min-width: 360px) and (max-width: 767px) {
-  /* Hamburger menu */
-
-  nav svg {
-    display: block;
-
-    fill: black;
-  }
-
-  .navlinks {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    position: fixed;
-    width: 170px;
-    height: 100%;
-    background-color: #c5b8ab;
-    box-shadow: -5px 0 5px rgb(0, 0, 0, 0.25);
-    padding-left: 1.5rem;
-    top: 0;
-    right: 0;
-    z-index: 2;
-  }
-
-  .open-sidebar-button {
-    display: block;
-    cursor: pointer;
-  }
-
-  .closed-sidebar-button {
-    display: none;
-  }
-
-  #sidebar-active:checked ~ .navlinks .closed-sidebar-button {
-    display: flex;
-    top: 0;
-    right: 0;
-  }
-
-  #sidebar-active:not(:checked) ~ .navlinks {
-    display: none;
-  }
-
-  .navlinks a:hover {
-    background-color: rgb(255, 255, 255);
-  }
-  /* End hamburger menu  */
-
+  nav a,
   h1,
   .motto {
     font-size: 1.3rem;
@@ -266,7 +195,6 @@ footer a {
     margin: 0;
     padding: 0;
   }
-
   .om-oss-text {
     margin-top: 1.5rem;
     font-size: 1rem;
@@ -277,9 +205,12 @@ footer a {
     display: none;
   }
 
-  .bottomimage {
-    width: 70vh;
+  .bildgalleri {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
+
   .opening-hours-container {
     display: flex;
     justify-content: center;
@@ -295,9 +226,9 @@ footer a {
     font-size: 1.1rem;
   }
 
-  .footerlinks {
-    font-size: 1.1rem;
+  #footerlinks {
+    font-size: 1rem;
   }
 }
 
-/* Kod validerat 17/9 */
+/* Kod validerad 20/9 */

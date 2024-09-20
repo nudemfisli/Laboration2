@@ -14,42 +14,10 @@
     <!-- Hör börjar navbar -->
     <header>
       <nav>
-        <!-- Hamburger meny -->
-        <input type="checkbox" id="sidebar-active" />
-        <label for="sidebar-active" class="open-sidebar-button">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            height="32px"
-            viewBox="0 -960 960 960"
-            width="24px"
-            fill="#e8eaed"
-          >
-            <path
-              d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
-            />
-          </svg>
-        </label>
-        <div class="navlinks">
-          <label for="sidebar-active" class="closed-sidebar-button">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="32px"
-              viewBox="0 -960 960 960"
-              width="24px"
-              fill="#e8eaed"
-            >
-              <path
-                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
-              />
-            </svg>
-          </label>
-
-          <!-- Slutet av hamburger meny -->
-          <a href="#">Hem</a>
-          <a href="#">Meny</a>
-          <a href="#">Om oss</a>
-          <a href="#">Boka bord</a>
-        </div>
+        <a href="#">Hem</a>
+        <a href="#">Meny</a>
+        <a href="#">Om oss</a>
+        <a href="#">Boka bord</a>
       </nav>
     </header>
 
@@ -62,7 +30,7 @@
 
       <!-- Section 2: om oss -->
       <section class="om-oss">
-        <div class="text">
+        <article class="om-text">
           <p class="om-oss-text">
             Mysigt café i Stockholm. Vi serverar gott kaffe och te med smaker
             från världen över. Vi har massor med goda bakverk som bullar, kakor,
@@ -73,7 +41,7 @@
             även andra sötsaker som glass. Alla våra ingredienser är ekologiskt
             och närproducerat.
           </p>
-        </div>
+        </article>
         <img
           src="img/cafemachine.jpg"
           alt="Bild på kaffemaskinen"
@@ -104,9 +72,9 @@
           class="bottom-image"
           alt="En tekanna som häller te i en tekopp"
         />
-        <div class="opening-hours-container">
+        <aside class="opening-hours-container">
           <div class="opening-hours">
-            <h3>Öppettider</h3>
+            <h2>Öppettider</h2>
             <p>Måndag: 08.00 - 20.00</p>
             <p>Tisdag: 08.00 - 20.00</p>
             <p>Onsdag: 08.00 - 20.00</p>
@@ -115,20 +83,18 @@
             <p>Lördag: 09.00 - 19.00</p>
             <p>Söndag: 08.00 - 19.00</p>
           </div>
-        </div>
+        </aside>
       </div>
     </section>
 
     <!-- Footer -->
-    <footer>
-      <div class="copyright">&copy; Café Tekoppen</div>
-      <div class="footerlinks">
-        <a href="#">Om oss</a>
-        <a href="#">Kontakta oss</a>
-        <a href="#">Sociala medier</a>
-      </div>
+    <footer id="footerlinks">
+      <div id="copyright">&copy; Café Tekoppen</div>
+      <a href="#">Om oss</a>
+      <a href="#">Kontakta oss</a>
+      <a href="#">Sociala medier</a>
     </footer>
   </body>
 </html>
 
-<!-- Koden validerad 17/9, några varningar och trailing slash pga prettier -->
+<!-- Koden validerad 20/9, några varningar och trailing slash pga prettier -->
